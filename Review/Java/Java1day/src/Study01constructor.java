@@ -14,6 +14,13 @@ public class Study01constructor {
         //예를 들면 빨간색 자동차 5인승 등
         System.out.println(study);
         int a = study.thatmethod();
+        // 변수 a를 만들기 위해선 자료형이 필요함 위의 케이스에서는 int사용
+        //ex
+        /*
+         * int b; //변수 b를 만듦
+         * b = 2; //b에 값을 넣음
+         * System.out.print(b); //b출력한거
+         */
         System.out.println(a);
     }
     public int thatmethod(){

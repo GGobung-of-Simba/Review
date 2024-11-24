@@ -1,0 +1,145 @@
+#git 사용 및 활용방법
+
+## 1. git 설치
+```
+https://git-scm.com/
+```
+
+## 2. github
+```
+https://github.com/
+```
+
+## 3. git 초기설정
+1. 로컬에 저장 위치 설정
+```
+- 저장소 파일 만들기
+
+- cmd에 위치 설정하기
+cd [로컬파일주소]
+
+- VS CODE에 저장소 파일 열어두기
+```
+
+2. github에 저장소 생성
+
+## 4. 로컬에 git 설정
+
+1. 사용자 이름 설정
+```
+git config --global user.name "사용자이름"
+```
+
+2. 사용자 이메일 설정
+```
+git config --global user.email "사용자이메일주소"
+```
+
+3. 설정된 정보 확인하기
+```
+git config --list
+```
+
+## 5. github에 첫 업로드
+1. 초기화
+```
+git init
+```
+
+2. 파일추가
+```
+git add .
+(모든 파일 추가)
+
+git add [추가할파일경로.확장자까지]
+(ex. git add C:\Users\갛굣갛\Desktop\Becoming_a_developer\Review\git.md)
+```
+
+3. 커밋
+```
+git commit -m "수정내용 및 전달내용 및 기록"
+```
+
+4. github의 저장소와 로컬 프로젝트 연결
+```
+git remote add origin [github 저장소 주소.git]
+```
+
+5. 저장소 연결 확인
+```
+git remote -v
+```
+
+6. git branch 작업이름 main으로 설정
+```
+git branch -M main
+```
+
+7. git branch 작업이름 확인
+```
+git branch
+```
+
+8. git hub로 보내기
+```
+git push origin main
+```
+
+## 6. 이후 업로드
+---
+1. 원격 저장소 변경 내용 확인 및 최신 데이터 가져오기
+```
+git pull
+```
+
+2. 업데이트 대상 파일 추가
+```
+git add .
+```
+
+3. commit
+```
+git commit -m "내용"
+```
+
+4. push
+```
+git push
+
+git push origin main
+```
+---
+
+5. 원격 저장소와 로컬의 변경사항 확인
+```
+git fetch
+```
+
+## 7. 그룹 팀 프로젝트 진행방법
+1. github에서 소스코드 다운로드
+```
+git clone <github저장소주소> <폴더이름>
+```
++ 폴더이름은 선택사항
+
+2. 다운받은 로컬저장소에서 자신만의 branch 만들기
+```
+git checkout -b <branch 이름>
+```
+
+3. github의 대표 branch에서 소스코드 가져오기
+```
+git pull origin main
+```
+
+4. 작업내용 push
+```
+git add .
+git commit -m "내용"
+git push origin <자신만의 branch이름>
+```
+
+5. branch 이동하는 방법
+```
+git checkout <이동 대상 branch 이름>
+```

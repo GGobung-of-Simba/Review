@@ -8,9 +8,9 @@ public class Study07method {
  */
     void a(int b){}
     int a(double b){return 0;}
-    String a(char b){return 0;}
+    String a(char b){return "";}
 
-    매개변수자리만 확인 하면 됨.
+    //매개변수자리만 확인 하면 됨.
 
 /*오버로딩하기 힘들면 그냥 메소드 이름을 다르게 만들면 됨. */
 

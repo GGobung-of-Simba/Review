@@ -20,8 +20,6 @@ public class Study06array {
             System.out.println(weekK[i]);
         }
         
-
-
         String[][] array01 = new String[10][10];
         for(int i = 0; i < array01.length; i++){
             for(int j = 0; j < array01[i].length; j++){
